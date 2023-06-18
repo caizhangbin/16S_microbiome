@@ -1,7 +1,7 @@
 library(tidyverse)
 
 
-original_data <- read.csv("/Users/zhangbincai/Desktop/study/projects/sherbrook innoculation/second round 16s/analysis/rarefied.removed.low.reads_OTU.csv", row.names = 1)
+original_data <- read.csv("rarefied.removed.low.reads_OTU.csv", row.names = 1)
 Group <- original_data$Group 
 
 otu_table <- original_data%>%

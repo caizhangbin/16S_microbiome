@@ -3,7 +3,7 @@ library(tidyverse)
 library(dplyr)
 library(QsRutils)
 
-shared<-read_csv("/Users/zhangbincai/Desktop/study/projects/sherbrook innoculation/second round 16s/analysis/removed.low.reads_OTU.csv") %>%
+shared<-read_csv("/removed.low.reads_OTU.csv") %>%
   pivot_longer(-Group) %>%
   group_by(Group) %>%
   #summarize(totall= sum(value))%>%
@@ -68,7 +68,7 @@ shared %>%
   ungroup()%>%
   select(-numOtus, -Group)
 
-original_data <-read.table("/Users/zhangbincai/Desktop/study/projects/sherbrook innoculation/second round 16s/analysis/stability.trim.contigs.good.unique.good.filter.unique.precluster.abund.pick.pick.opti_mcc.shared",sep = "\t", header = TRUE)
+original_data <-read.table("stability.trim.contigs.good.unique.good.filter.unique.precluster.abund.pick.pick.opti_mcc.shared",sep = "\t", header = TRUE)
 labels <- original_data$label
 numOtus <- original_data$numOtus
 groups <- original_data$Group 

@@ -2,7 +2,7 @@ library(vegan)
 library(dplyr)
 
 # Load OTU data
-original_data <- read_csv("/Users/zhangbincai/Desktop/study/projects/sherbrook innoculation/second round 16s/analysis/removed.low.reads_OTU.csv") 
+original_data <- read_csv("/removed.low.reads_OTU.csv") 
 
 groups <- original_data$Group 
 

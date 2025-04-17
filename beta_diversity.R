@@ -2,8 +2,8 @@ library(vegan)
 library(tidyverse)
 library(ggplot2)
 
-metadata <- read.csv("/Users/zhangbincai/Desktop/study/projects/sherbrook_innoculation/second_round_16s/analysis/D7.csv")
-shared <- read.csv("/Users/zhangbincai/Desktop/study/projects/sherbrook_innoculation/second_round_16s/analysis/rarefied.D7.OTU.csv") %>%
+metadata <- read.csv("D7.csv")
+shared <- read.csv("rarefied.D7.OTU.csv") %>%
   pivot_longer(-Group) %>%
   group_by(Group) %>%
   #summarize(totall= sum(value))%>%

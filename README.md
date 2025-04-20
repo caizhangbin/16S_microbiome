@@ -34,3 +34,7 @@ https://mothur.org/wiki/miseq_sop/
 Phyloseq documentation & tutorials
 https://joey711.github.io/phyloseq/
 
+## Examples images
+![D3_chao1](https://github.com/user-attachments/assets/d0e983db-e67a-4ca8-ad12-99a5fb31c670)
+![D3_beta](https://github.com/user-attachments/assets/14528f9f-0415-425b-a9f7-3b23a09892a2)
+
